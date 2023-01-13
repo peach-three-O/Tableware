@@ -3,6 +3,9 @@
   "version": "0.0.1",
   "description": "안 먹어보면 억울해 공식 모듈 라이브러리",
   "main": "index.js",
+  "publishConfig": {
+    "@sonwonjae:registry": "https://npm.pkg.github.com"
+  },
   "scripts": {
     "test": "exit 0"
   },
