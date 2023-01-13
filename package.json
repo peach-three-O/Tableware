@@ -1,0 +1,15 @@
+{
+  "name": "@sonwonjae/tableware",
+  "version": "0.0.1",
+  "description": "안 먹어보면 억울해 공식 모듈 라이브러리",
+  "main": "index.js",
+  "scripts": {
+    "test": "exit 0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com-sonwonjae:peach-three-O/Tableware.git"
+  },
+  "author": "sonwonjae",
+  "license": "MIT"
+}
