@@ -31,4 +31,3 @@ jobs:
       - run: npm publish
         env:
           NODE_AUTH_TOKEN: ${{secrets.TABLEWARE_PACKAGE_TOKEN}}
-          GITHUB_TOKEN: ${{secrets.TABLEWARE_PACKAGE_TOKEN}}
