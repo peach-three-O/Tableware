@@ -27,6 +27,8 @@ jobs:
         with:
           node-version: 16
           registry-url: https://npm.pkg.github.com/
+      - name: Add GiHub Package Token
+        run: echo "//npm.pkg.github.com/:_authToken=${{ secrets.TABLEWARE_PACKAGE_TOKEN }}" > ~/.npmrc
       - run: npm ci
       - run: npm publish
         env:
