@@ -27,9 +27,14 @@
     "changeset": "latest",
     "prettier": "latest",
     "turbo": "latest",
+    "typescript": "^4.7.4",
     "tsconfig": "*"
   },
   "dependencies": {
+    "eslint": "^7.23.0",
+    "eslint-config-next": "13.0.0",
+    "eslint-config-prettier": "^8.3.0",
+    "eslint-plugin-react": "7.31.8",
     "@peach-three-o/components": "*",
     "@peach-three-o/hooks": "*"
   }
