@@ -27,14 +27,8 @@ jobs:
           node-version: 16
           registry-url: https://npm.pkg.github.com/
       - run: npm ci
-      - name: Configure npm
-        run: |
-          cat << EOF > "$HOME/.npmrc"
-            @peach-three-o:registry=https://npm.pkg.github.com
-            //npm.pkg.github.com/:_authToken=$GITHUB_TOKEN
-          EOF
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      - name: Add GiHub Package Token
+        run: echo "//npm.pkg.github.com/:_authToken=${{ secrets.GITHUB_TOKEN }}" > ~/.npmrc
 
       - name: Publish
         id: changesets
