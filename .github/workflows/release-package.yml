@@ -31,11 +31,10 @@ jobs:
         run: |
           cat << EOF > "$HOME/.npmrc"
             @peach-three-o:registry=https://npm.pkg.github.com
-            //r/npm.pkg.github.com/:_authToken=$NPM_TOKEN
-            //registry.npmjs.org/:_authToken=$NPM_TOKEN
+            //npm.pkg.github.com/:_authToken=$GITHUB_TOKEN
           EOF
         env:
-          NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
       - name: Publish
         id: changesets
