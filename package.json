@@ -3,13 +3,32 @@
   "version": "0.0.3",
   "description": "안 먹어보면 억울해 공식 모듈 라이브러리",
   "main": "index.js",
+  "workspaces": [
+    "apps/*",
+    "packages/*"
+  ],
   "scripts": {
-    "test": "exit 0"
+    "build": "turbo run build",
+    "dev": "turbo run dev --parallel",
+    "lint": "turbo run lint",
+    "format": "prettier --write \"**/*.{ts,tsx,md}\"",
+    "publish-all-packages": "turbo run build lint && changeset version && changeset publish"
   },
   "repository": {
     "type": "git",
     "url": "git@github.com-sonwonjae:peach-three-O/Tableware.git"
   },
   "author": "sonwonjae",
-  "license": "MIT"
+  "license": "MIT",
+  "devDependencies": {
+    "eslint-config-custom": "*",
+    "tsconfig": "*",
+    "prettier": "latest",
+    "turbo": "latest",
+    "changeset": "latest"
+  },
+  "dependencies": {
+    "@peach-three-o/components": "*",
+    "@peach-three-o/hooks": "*"
+  }
 }

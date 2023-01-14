@@ -76,11 +76,14 @@ typings/
 .cache
 
 # Next.js build output
-.next
+.next/**
 
 # Nuxt.js build / generate output
 .nuxt
-dist
+dist/**
+
+# production
+build/**
 
 # Gatsby files
 .cache/
@@ -102,3 +105,6 @@ dist
 
 # TernJS port file
 .tern-port
+
+# turbo
+.turbo

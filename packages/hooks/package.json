@@ -1,0 +1,24 @@
+{
+    "name": "@peach-three-o/hooks",
+    "version": "0.0.1",
+    "scripts": {
+        "dev": "next dev --port 3001",
+        "build": "next build",
+        "start": "next start",
+        "lint": "next lint"
+    },
+    "description": "안 먹어보면 억울해 공식 hooks",
+    "devDependencies": {
+        "@types/node": "^17.0.12",
+        "@types/react": "^17.0.37",
+        "@types/react-dom": "^17.0.11",
+        "@babel/core": "^7.0.0",
+        "eslint": "^7.32.0",
+        "next": "^13.1.1",
+        "react": "^18.2.0",
+        "react-dom": "^18.2.0",
+        "typescript": "^4.5.2",
+        "eslint-config-custom": "*",
+        "tsconfig": "*"
+    }
+}
