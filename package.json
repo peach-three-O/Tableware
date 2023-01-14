@@ -12,7 +12,8 @@
     "dev": "turbo run dev --parallel",
     "lint": "turbo run lint",
     "format": "prettier --write \"**/*.{ts,tsx,md}\"",
-    "publish-all-packages": "turbo run build lint && changeset version && changeset publish"
+    "publish-all-packages": "turbo run build lint && changeset version && changeset publish",
+    "show-changeset-version": "changeset version"
   },
   "repository": {
     "type": "git",
@@ -21,11 +22,12 @@
   "author": "sonwonjae",
   "license": "MIT",
   "devDependencies": {
+    "@changesets/cli": "^2.26.0",
+    "changeset": "latest",
     "eslint-config-custom": "*",
-    "tsconfig": "*",
     "prettier": "latest",
-    "turbo": "latest",
-    "changeset": "latest"
+    "tsconfig": "*",
+    "turbo": "latest"
   },
   "dependencies": {
     "@peach-three-o/components": "*",
